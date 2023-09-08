@@ -25,5 +25,7 @@ int main(){
     printf("O valor dos dois angulos sao de:\n");
     printf("Angulo 1 =%.2f\n", angulo1);
     printf("Angulo 2 =%.2f\n", angulo2);
+    
+    return 0;
 }
 
