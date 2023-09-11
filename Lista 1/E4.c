@@ -9,7 +9,7 @@ int main() {
     printf("Digite o seu nome completo: ");
     fgets(nome, sizeof(nome), stdin); 
 
-    TAM = strlen(nome);
+    TAM = strlen(nome) ;
 
     for (int i = 0; i < TAM -1; i++)
     {
