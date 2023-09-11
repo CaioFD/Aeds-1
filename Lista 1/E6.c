@@ -1,34 +1,16 @@
 #include <stdio.h>
 
-bool cores(int vermelho, int verde, int azul){
-    if (vermelho < 0 || vermelho > 255 || verde < 0 || verde > 255 || azul < 0 || azul > 255)
-    {
-        return true;
-    }else{
-        return false;
-    }
-}
+int main(){
 
-int main() {
+int R,G,B;
+printf("Vermelho\n");
+scanf("%d", &R);
+printf("Verde\n");
+scanf("%d", &G);
+printf("Azul\n");
+scanf("%d", &B);
 
-    int vermelho=0, azul=0, verde=0;
+printf("%2x %2x %2x", R,G,B);
 
-    printf("Digite o valor para o canal vermelho (0-255):");
-    scanf("%d", vermelho);
-    printf("Digite o valor para o canal verde (0-255):");
-    scanf("%d", azul);
-    printf("Digite o valor para o canal verde (0-255):");
-    scanf("%d", verde);
-
-    if (cores(vermelho, verde, azul))
-    {
-        printf("valores nao estao dentro do espaco determinado\n");
-        return 1; 
-    }
-
-    printf("O valor em hexadecimal da cor vermelha é: %02X\n", vermelho);
-    printf("O valor em hexadecimal da cor verde é: %02X\n", verde);
-    printf("O valor em hexadecimal da cor azul é: %02X\n", azul);
-    
-    return 0;
+return 0;
 }
