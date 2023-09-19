@@ -7,6 +7,12 @@ int main(){
 
     if (num % 2 == 0)
     {
+        if ((num % 2 == 0) && (num % 5 == 0) )
+        {
+           printf("Este numero eh divisivel por 2, 5 e 10\n");
+           return 0;
+        }
+        
         printf("Este numero eh divisivel por 2");
 
     }else if (num % 5 == 0)

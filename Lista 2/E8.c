@@ -25,7 +25,7 @@ int main() {
     double salario=0.0, inss=0.0, irpf=0.0;
     salario = readdouble("qual e o seu salario: ");
 
-    //calculo de IRPF 
+    
     if (salario <= 2112.00)
     {
         irpf = calcPorcentage(salario, 0);
@@ -43,7 +43,7 @@ int main() {
         irpf = calcPorcentage(salario, 27.5);
     }
 
-    // calculo de INSS
+    
     if (salario <= 1320.00)
     {
         inss = calcPorcentage(salario, 7.5);
@@ -58,13 +58,12 @@ int main() {
         inss = calcPorcentage(salario, 14);
     }else if (salario >= 7507.49)
     {
-        inss = calcINSS(); //funcao diferente para calcular a % especifica
+        inss = calcINSS(); 
     }
     
     printf("IRPF: %.2lf\n", irpf);
     printf("INSS: %.2lf\n", inss);
 
-    pause ( "Apertar ENTER para terminar" );
-    clear();
+   
     return 0;
 }
