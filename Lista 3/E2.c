@@ -3,13 +3,16 @@
 
 int main(){
 
-int n, soma = 0;
+int n =0; 
+float soma = 0;
 printf("Digite o numero de termos n: ");
 scanf("%d", &n);
 
-for (int  i = 0; i < n; i++)
+for (int  i = 0 ; i <= n; i++)
 {
-    soma = 1/(pow(2,i));
+    soma += 1/(pow(2,i));
 }
+
+printf("%f", soma);
     return 0;
 }
