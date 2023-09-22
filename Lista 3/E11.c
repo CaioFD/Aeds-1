@@ -17,6 +17,8 @@ int main(){
         conta += (pow((-1), i) * pow((-1+x),i))/i;
     }
     conta = conta *(-1);
+
     printf("%f", conta);
+    
     return 0;
 }
