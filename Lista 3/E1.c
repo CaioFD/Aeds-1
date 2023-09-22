@@ -8,4 +8,5 @@ int main(){
         soma = soma + i;
     }
     
+    return 0;
 }
