@@ -3,7 +3,6 @@
 int main() {
     int n1, n2, menor, i, primos = 1;
 
-    // Solicita ao usuário que insira dois números inteiros
     printf("Digite o primeiro numero inteiro: ");
     scanf("%d", &n1);
     printf("Digite o segundo numero inteiro: ");
