@@ -9,11 +9,11 @@ printf("Digite o numero de termos para a sequencia de FIBONACCI:\n");
 scanf("%d", &nTERMOS);
 
   if (nTERMOS >= 1) {
-        printf("%2.f", a);
+        printf("%d", a);
     }
 
 for (i = 1; i < nTERMOS; i++) {
-        printf(", %.2f", a + b);
+        printf(", %d", a + b);
         c = a + b;
         a = b;
         b = c;

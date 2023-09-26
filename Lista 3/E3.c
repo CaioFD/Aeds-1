@@ -10,7 +10,6 @@ int main(){
     while (1)
     {
         printf("Digite os numeros a serem contados: \n");
-    
         scanf("%d", &n);
 
         if (n == 0) {
