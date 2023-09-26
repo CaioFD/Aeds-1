@@ -11,11 +11,11 @@ int main(){
 
     }else if ((idade == 16) || (idade == 17))
     {
-        printf("Voce eh um eleitor facultativo menor de idade");
+        printf("Voce eh um eleitor(a) facultativo menor de idade");
 
     }else if ((idade >= 18) && (idade <= 64))
     {
-        printf("Voce eh um eleitor obrigatorio,");
+        printf("Voce eh um eleitor obrigatorio");
 
     }else  
     {
