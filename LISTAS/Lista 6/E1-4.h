@@ -50,7 +50,7 @@ Data verificacao(int dia, int mes, int ano)
             }
 
             break;
-        case 4: // 30 dias
+        case 4: 
 
             if (dia >= 1 && dia <= 31)
             {
@@ -66,7 +66,7 @@ Data verificacao(int dia, int mes, int ano)
             }
 
             break;
-        case 6: // 30 dias
+        case 6: 
 
             if (dia >= 1 && dia <= 31)
             {
@@ -82,7 +82,7 @@ Data verificacao(int dia, int mes, int ano)
             }
 
             break;
-        case 9: // 30 dias
+        case 9: 
 
             if (dia >= 1 && dia <= 31)
             {
@@ -98,7 +98,7 @@ Data verificacao(int dia, int mes, int ano)
             }
 
             break;
-        case 11: // 30 dias
+        case 11: 
 
             if (dia >= 1 && dia <= 31)
             {
@@ -170,10 +170,6 @@ Data MaisDias(Data data, int dia){
     return data2;
 }
 
-// estou com erro nessa funcao, e nao sei qual e o erro dela.
-// nao consigo compilar e fica dando esse erro aqui
-// https://prnt.sc/M5LAWZVLBZyQ
-// porem acho que a logica esta certa
 
 int comparacao(int *dia, int *mes, int *ano){
     int dias = *dia;

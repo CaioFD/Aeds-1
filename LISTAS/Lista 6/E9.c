@@ -1,14 +1,5 @@
-
+#include <stdio.h>
 #include "E9.h"
-
-
-typedef struct 
-{
-    Horario hora;
-    Data data;
-} T
-
-
 
 int main() {
 
