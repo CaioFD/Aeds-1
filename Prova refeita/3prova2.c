@@ -21,7 +21,7 @@ int main(){
 
     if (tam <= 0 )
     {
-        printf("Tamanho do vetor deve ser um número natural (não negativo).\n");
+        printf("Tamanho do vetor deve ser um numero natural (nao negativo).\n");
         return 1;
     }
 
