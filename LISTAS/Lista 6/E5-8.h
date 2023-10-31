@@ -12,7 +12,7 @@ Horario validarHorario(int hora, int minuto, int segundo) {
         horario.hora = hora;
         horario.minuto = minuto;
         horario.segundo = segundo;
-    } else {
+    } else { 
         horario.hora = 0;
         horario.minuto = 0;
         horario.segundo = 0;
