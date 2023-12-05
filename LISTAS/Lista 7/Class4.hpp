@@ -9,8 +9,7 @@ private:
     string nome;
 
 public:
-    Conta conta;
-
+    Conta* contas;
     Pessoa(string nome, string CPF);
     string getNome();
 };
@@ -21,21 +20,19 @@ class Fisica : public Pessoa
     private:
     string CPF;
 
-public:
+    public:
     Fisica(string CPF);
     string getCPF();
 };
-
-
 
 class Juridica : public Pessoa
 {
     private:
     string CNPJ;
 
-public:
+    public:
     Juridica(string CPF);
-    string getCNPJ;
+    string getCNPJ();
 };
 
 
@@ -67,12 +64,12 @@ class Corrente : public Conta
 
 class Poupanca : public Conta
 {
-    int aniversario;
-    float valor;
+    int aniversario[10];
+    float* valor;
 
-public:
-    int getAniversario();
-    int aplicaJuros();
+    public:
+    int* getAniversario();
+    int* aplicaJuros();
 };
 
 
@@ -82,3 +79,16 @@ public:
     float limite;
     Especial(float limite);
 };
+
+
+
+class Historico
+{
+private:
+    int* numero_conta;
+    int* operacao;
+    float* valor;
+public:
+   void operar(Conta conta, int operacao, float valor){}
+};
+

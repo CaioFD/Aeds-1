@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class Hora
@@ -89,6 +90,9 @@ public:
     }
     
 
-    //Q2.8
+      friend ostream& operator<<(ostream& os, const Hora& horario) {  //Q2.8
+        os << setfill('0') << setw(2) << horario.hora << ":" << setw(2) << horario.minuto << ":" << setw(2) << horario.segundo;
+        return os;
+    } 
 
 };

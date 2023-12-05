@@ -39,9 +39,15 @@ public:
         this->dia = this->dia+dia;
     }
 
-    Data operator+(int dia){ //Q1.5
+    Data operator+(int dia){  //Q1.5
         this->dia = this->dia + dia;
     }
+
+         friend std::ostream& operator<<(std::ostream& os, const Data& data) {  //Q1.6
+        os << data.dia << '/' << data.mes << '/' << data.ano;
+        return os;
+    }
+
 
     void diferencaDias(Data b){  //Q1.7
         this->dia = this->dia - b.dia;
