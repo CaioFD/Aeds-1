@@ -18,6 +18,7 @@ public:
 
 class Fisica : public Pessoa
 {
+    private:
     string CPF;
 
 public:
@@ -29,10 +30,12 @@ public:
 
 class Juridica : public Pessoa
 {
+    private:
     string CNPJ;
 
 public:
     Juridica(string CPF);
+    string getCNPJ;
 };
 
 
