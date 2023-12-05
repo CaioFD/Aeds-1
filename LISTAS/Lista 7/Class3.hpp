@@ -67,11 +67,12 @@ class Dias : Hora, Data
         return result;
     }
 
-      friend ostream& operator<<(ostream& os, const Dias& dataHorario) { //Q3.5
-        os << setfill('0') << setw(4) << dataHorario.getAno() << "/"
-           << setw(2) << dataHorario.getMes() << "/" << setw(2) << dataHorario.getDia() << "-"
-           << setw(2) << dataHorario.getHora() << ":" << setw(2) << dataHorario.getMinuto() << ":"
-           << setw(2) << dataHorario.getSegundo();
+
+         friend ostream& operator<<(ostream& os, const DataHorario& dh);
+        ostream& operator<<(ostream& os, const DataHorario& dh) {
+        os << static_cast<const Data&>(dh) << " " << static_cast<const Horario&>(dh);
+        }
+        
         return os;
-    }
+
 };

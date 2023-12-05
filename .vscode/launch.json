@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/caiod/OneDrive/Área de Trabalho/PROGRAMING/Algoritimo e Estrutura de dados -Gustavo",
+      "program": "c:/Users/caiod/OneDrive/Área de Trabalho/PROGRAMING/Algoritimo e Estrutura de dados -Gustavo/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
