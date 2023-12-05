@@ -67,9 +67,9 @@ class Dias : Hora, Data
         return result;
     }
 
-
-         friend ostream& operator<<(ostream& os, const DataHorario& dh);
-        ostream& operator<<(ostream& os, const DataHorario& dh) {
+// tentei de todas as formas e simplesmente desisti kkkkkkk
+         friend ostream& operator<<(ostream& os, const DataHorario& dh) // Q3.5
+        ostream& operator<<(ostream& os, const DataHorario& dh){
         os << static_cast<const Data&>(dh) << " " << static_cast<const Horario&>(dh);
         }
         
